@@ -86,12 +86,8 @@ public class TopTracksFragment extends Fragment {
                 args.putParcelableArrayList(MainActivity.BUNDLE_TRACK_LIST, tracksList);
                 args.putParcelable(MainActivity.BUNDLE_TRACK_DATA, mTrackAdapter.getItem(position));
 
-//                int tempPosition = position;
-//                args.putInt(BUNDLE_SELECTED_TRACKPOS, tempPosition);
-
                 ((Callback) getActivity())
                         .onTrackSelected(args);
-
             }
         });
 

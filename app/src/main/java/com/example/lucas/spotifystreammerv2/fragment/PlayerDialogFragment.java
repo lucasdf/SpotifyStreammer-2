@@ -139,6 +139,7 @@ public class PlayerDialogFragment extends DialogFragment {
         return rootView;
     }
 
+    // Update the UI info with new track data
     public void updateUI (ParcelableSpotifyTrack playingTrack) {
 
         if (mPlayingTrack != null && mPlayingTrack != playingTrack)
@@ -148,11 +149,8 @@ public class PlayerDialogFragment extends DialogFragment {
                 artist = artist.concat(theartist.name);
             }
             mArtistName.setText(artist);
-
             mAlbumName.setText(playingTrack.album.name);
-
             Picasso.with(this.getActivity()).load(playingTrack.album.images.get(0).url).into(mPicture);
-
             mMusicName.setText(playingTrack.name);
         }
     }
@@ -162,7 +160,7 @@ public class PlayerDialogFragment extends DialogFragment {
         super.onSaveInstanceState(savedInstanceState);
         savedInstanceState.putParcelable(MainActivity.BUNDLE_TRACK_DATA, mPlayingTrack);
     }
-
+    // Callbacks implemented by MainActivity
     public interface Callback {
         int getCurrentPosition();
         void resumeMusicPlayer();
