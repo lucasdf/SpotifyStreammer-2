@@ -35,8 +35,6 @@ import kaaes.spotify.webapi.android.models.Tracks;
 public class TopTracksFragment extends Fragment {
     private static final String LOG_TAG = TopTracksFragment.class.getSimpleName();
     public static final String ARTIST_ID = "artist_id";
-    public static final String BUNDLE_TRACKLIST = "TOPTRACKSFRAGMENT_TRACKLIST";
-    public static final String BUNDLE_SELECTED_TRACKDATA = "TOPTRACKSFRAGMENT_TRACKSELECTED";
 
     public static String artistId; // The artist ID to get the tracks from, provided by Intent.EXTRA_TEXT
     public static TrackAdapter mTrackAdapter;
