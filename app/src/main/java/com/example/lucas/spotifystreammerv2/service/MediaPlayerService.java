@@ -309,28 +309,5 @@ public class MediaPlayerService extends Service implements
         NotificationManager mNotificationManager =
                 (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
         mNotificationManager.notify(0, mBuilder.build());
-
-
-
-
-//        RemoteViews remoteViews = new RemoteViews(getPackageName(),
-//                R.id.notification_music);
-//        NotificationCompat.Builder mBuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(
-//                this).setContent(
-//                remoteViews);
-//        TaskStackBuilder stackBuilder = TaskStackBuilder.create(context);
-//        stackBuilder.addNextIntent(resultIntent);
-//        PendingIntent resultPendingIntent =
-//                stackBuilder.getPendingIntent(
-//                        0,
-//                        PendingIntent.FLAG_UPDATE_CURRENT
-//                );
-//        mBuilder.setContentIntent(resultPendingIntent);
-//
-//        NotificationManager mNotificationManager =
-//                (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
-//        mNotificationManager.notify(0, mBuilder.build());
-
-
     }
 }
