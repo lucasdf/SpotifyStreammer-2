@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListPreference
+        android:title="@string/pref_country_code_label"
+        android:key="@string/pref_country_code_key"
+        android:entryValues="@array/pref_country_entry_values"
+        android:entries="@array/pref_country_entry"
+        />
+
+    <CheckBoxPreference
+        android:title="@string/pref_enable_notifications_label"
+        android:key="@string/pref_enable_notifications_key"
+        android:summaryOff="@string/pref_enable_notifications_false"
+        android:summaryOn="@string/pref_enable_notifications_true"
+        android:defaultValue="@string/pref_enable_notifications_default" />
+
+    <CheckBoxPreference
+        android:title="@string/pref_enable_explicit_songs_label"
+        android:key="@string/pref_enable_explicit_songs_key"
+        android:summaryOff="@string/pref_enable_explicit_songs_false"
+        android:summaryOn="@string/pref_enable_explicit_songs_true"
+        android:defaultValue="@string/pref_enable_explicit_songs_default" />
+
+</PreferenceScreen>

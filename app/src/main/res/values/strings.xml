@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Spotify Streamer v2</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="search_artist_field_message">Search for an artist</string>
+    <string name="search_artist_field_no_result_found">Sorry, no results founded :(</string>
+    <string name="title_activity_artist_detail">Top 10 Tracks</string>
+    <string name="action_player">Playing Now</string>
+    <string name="action_share">Share</string>
+
+    <string name="pref_country_code_label">Select your country</string>
+    <string name="pref_country_code_key" translatable="false">countryCode</string>
+    <string name="pref_country_code_default">US</string>
+
+    <string name="pref_enable_notifications_key" translatable="false">enable_notifications</string>
+    <string name="pref_enable_notifications_label">Music Notifications</string>
+    <string name="pref_enable_notifications_true">Enabled</string>
+    <string name="pref_enable_notifications_false">Not Enabled</string>
+    <string name="pref_enable_notifications_default" translatable="false">true</string>
+
+    <string name="pref_enable_explicit_songs_key" translatable="false">enable_explicit_songs</string>
+    <string name="pref_enable_explicit_songs_label">Explicit Songs</string>
+    <string name="pref_enable_explicit_songs_true">Display</string>
+    <string name="pref_enable_explicit_songs_false">Hide</string>
+    <string name="pref_enable_explicit_songs_default" translatable="false">true</string>
+</resources>

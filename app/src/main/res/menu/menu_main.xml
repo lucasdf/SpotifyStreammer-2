@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="103"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_player"
+        android:title="@string/action_player"
+        android:orderInCategory="101"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item android:id="@+id/action_share"
+        android:title="@string/action_share"
+        android:orderInCategory="102"
+        app:showAsAction="ifRoom"
+        android:visible="false"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider" />
+
+</menu>
